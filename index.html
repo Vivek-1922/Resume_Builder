@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Build Your Professional Resume</h1>
+
+    <div class="container">
+        <button onclick="goToBuilder('student')">Student Resume</button>
+        <button onclick="goToBuilder('it')">IT Resume</button>
+        <button onclick="goToBuilder('job')">Job Resume</button>
+    </div>
+
+<script>
+function goToBuilder(type) {
+    localStorage.setItem("resumeType", type);
+    window.location.href = "builder.html";
+}
+</script>
+
+</body>
+</html>
